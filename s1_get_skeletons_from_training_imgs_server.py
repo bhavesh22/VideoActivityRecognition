@@ -47,7 +47,7 @@ if True:  # Include project path
     from utils.lib_skeletons_io import ReadValidImagesAndActionTypesByTxt
     import utils.lib_commons as lib_commons
 
-
+sys.path.append('/home/abhinav2020future/Realtime-Action-Recognition')
 def par(path):  # Pre-Append ROOT to the path if it's not absolute
     return ROOT + path if (path and path[0] != "/") else path
 
