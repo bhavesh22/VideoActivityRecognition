@@ -47,7 +47,8 @@ import argparse
 if True:  # Include project path
     import sys
     import os
-    ROOT = os.path.dirname(os.path.abspath(__file__))+"/../"
+    # ROOT = os.path.dirname(os.path.abspath(__file__))+"/../"
+    ROOT = "ROOT = '/home/abhinav2020future/Realtime-Action-Recognition/'"
     CURR_PATH = os.path.dirname(os.path.abspath(__file__))+"/"
     sys.path.append(ROOT)
 
