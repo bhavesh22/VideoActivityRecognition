@@ -139,7 +139,7 @@ if __name__ == "__main__":
         # -- Draw
         img_disp = img.copy()
         skeleton_detector.draw(img_disp, humans)
-        img_displayer.display(img_disp, wait_key_ms=1)
+        # img_displayer.display(img_disp, wait_key_ms=1)
 
         # -- Get skeleton data and save to file
         skeletons, scale_h = skeleton_detector.humans_to_skels_list(humans)
