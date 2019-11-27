@@ -53,8 +53,11 @@ def par(path):  # Pre-Append ROOT to the path if it's not absolute
 
 # -- Settings
 
+# /home/abhinav2020future/Realtime-Action-Recognition/config
 
-cfg_all = lib_commons.read_yaml(ROOT + "config/config.yaml")
+# cfg_all = lib_commons.read_yaml(ROOT + "config/config.yaml")
+cfg_all = lib_commons.read_yaml("/home/abhinav2020future/Realtime-Action-Recognition/config")
+
 cfg = cfg_all["s1_get_skeletons_from_training_imgs.py"]
 
 IMG_FILENAME_FORMAT = cfg_all["image_filename_format"]
