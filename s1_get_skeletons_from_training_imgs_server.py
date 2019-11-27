@@ -38,7 +38,7 @@ import yaml
 import sys
 import os
 # ROOT = os.path.dirname(os.path.abspath(__file__))+"/../"
-ROOT = "/home/abhinav2020future/Realtime-Action-Recognition"
+ROOT = "/home/abhinav2020future/Realtime-Action-Recognition/"
 CURR_PATH = os.path.dirname(os.path.abspath(__file__))+"/"
 sys.path.append('/home/abhinav2020future/Realtime-Action-Recognition')
 sys.path.append(ROOT)
