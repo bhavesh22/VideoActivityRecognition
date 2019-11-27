@@ -34,19 +34,18 @@ Output:
 
 import cv2
 import yaml
+
+import sys
+import os
+ROOT = os.path.dirname(os.path.abspath(__file__))+"/../"
+CURR_PATH = os.path.dirname(os.path.abspath(__file__))+"/"
 sys.path.append('/home/abhinav2020future/Realtime-Action-Recognition')
+sys.path.append(ROOT)
 
-if True:  # Include project path
-    import sys
-    import os
-    ROOT = os.path.dirname(os.path.abspath(__file__))+"/../"
-    CURR_PATH = os.path.dirname(os.path.abspath(__file__))+"/"
-    sys.path.append(ROOT)
-
-    from utils.lib_openpose import SkeletonDetector
-    from utils.lib_tracker import Tracker
-    from utils.lib_skeletons_io import ReadValidImagesAndActionTypesByTxt
-    import utils.lib_commons as lib_commons
+from utils.lib_openpose import SkeletonDetector
+from utils.lib_tracker import Tracker
+from utils.lib_skeletons_io import ReadValidImagesAndActionTypesByTxt
+import utils.lib_commons as lib_commons
 
 def par(path):  # Pre-Append ROOT to the path if it's not absolute
     return ROOT + path if (path and path[0] != "/") else path
